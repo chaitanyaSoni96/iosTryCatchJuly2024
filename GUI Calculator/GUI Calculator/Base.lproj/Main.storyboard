@@ -3,21 +3,22 @@
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GUI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Calculator" id="BYZ-38-t0r" customClass="ViewController" customModule="GUI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SGb-yh-paN">
-                                <rect key="frame" x="10" y="468" width="410" height="410"/>
+                                <rect key="frame" x="10" y="419" width="410" height="410"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MET-Zb-1l5">
                                         <rect key="frame" x="0.0" y="0.0" width="410" height="130"/>
@@ -33,6 +34,7 @@
                                                 <rect key="frame" x="140" y="0.0" width="130" height="130"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dxi-KE-qhs" secondAttribute="height" multiplier="1:1" id="JmS-0Y-6mE"/>
                                                     <constraint firstAttribute="width" secondItem="dxi-KE-qhs" secondAttribute="height" multiplier="1:1" id="mOK-9c-wkY"/>
                                                 </constraints>
                                             </view>
@@ -51,6 +53,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="oLF-bz-OOP" secondAttribute="bottom" id="EAa-TM-poF"/>
+                                                    <constraint firstAttribute="width" secondItem="uKU-P1-H5o" secondAttribute="height" multiplier="1:1" id="Jnx-M6-A4c"/>
                                                     <constraint firstAttribute="trailing" secondItem="oLF-bz-OOP" secondAttribute="trailing" id="KeB-BH-wsZ"/>
                                                     <constraint firstAttribute="width" secondItem="uKU-P1-H5o" secondAttribute="height" multiplier="1:1" id="Zhv-CD-LED"/>
                                                     <constraint firstItem="oLF-bz-OOP" firstAttribute="leading" secondItem="uKU-P1-H5o" secondAttribute="leading" id="spV-KO-D8P"/>
@@ -58,10 +61,6 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="dxi-KE-qhs" firstAttribute="width" secondItem="dxi-KE-qhs" secondAttribute="height" multiplier="1:1" id="JmS-0Y-6mE"/>
-                                            <constraint firstItem="uKU-P1-H5o" firstAttribute="width" secondItem="uKU-P1-H5o" secondAttribute="height" multiplier="1:1" id="Jnx-M6-A4c"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-wB-XYJ">
                                         <rect key="frame" x="0.0" y="140" width="410" height="130"/>
@@ -77,6 +76,7 @@
                                                 <rect key="frame" x="140" y="0.0" width="130" height="130"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ao2-sN-Glh" secondAttribute="height" multiplier="1:1" id="Wrz-RK-Rzr"/>
                                                     <constraint firstAttribute="width" secondItem="Ao2-sN-Glh" secondAttribute="height" multiplier="1:1" id="axi-mz-e0e"/>
                                                 </constraints>
                                             </view>
@@ -84,14 +84,11 @@
                                                 <rect key="frame" x="280" y="0.0" width="130" height="130"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="y1R-IJ-hAg" secondAttribute="height" multiplier="1:1" id="duS-Um-uAp"/>
                                                     <constraint firstAttribute="width" secondItem="y1R-IJ-hAg" secondAttribute="height" multiplier="1:1" id="dxI-gb-PdA"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Ao2-sN-Glh" firstAttribute="width" secondItem="Ao2-sN-Glh" secondAttribute="height" multiplier="1:1" id="Wrz-RK-Rzr"/>
-                                            <constraint firstItem="y1R-IJ-hAg" firstAttribute="width" secondItem="y1R-IJ-hAg" secondAttribute="height" multiplier="1:1" id="duS-Um-uAp"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TMc-0e-HBa">
                                         <rect key="frame" x="0.0" y="280" width="410" height="130"/>
@@ -108,20 +105,18 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="J05-RL-Dl4" secondAttribute="height" multiplier="1:1" id="9fG-Qd-xkA"/>
+                                                    <constraint firstAttribute="width" secondItem="J05-RL-Dl4" secondAttribute="height" multiplier="1:1" id="OzB-fm-Hrf"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lR-gn-nYA">
                                                 <rect key="frame" x="280" y="0.0" width="130" height="130"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4lR-gn-nYA" secondAttribute="height" multiplier="1:1" id="irN-Pb-OQC"/>
                                                     <constraint firstAttribute="width" secondItem="4lR-gn-nYA" secondAttribute="height" multiplier="1:1" id="q7F-yq-X9S"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="J05-RL-Dl4" firstAttribute="width" secondItem="J05-RL-Dl4" secondAttribute="height" multiplier="1:1" id="OzB-fm-Hrf"/>
-                                            <constraint firstItem="4lR-gn-nYA" firstAttribute="width" secondItem="4lR-gn-nYA" secondAttribute="height" multiplier="1:1" id="irN-Pb-OQC"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -129,7 +124,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9Y-qa-ln8">
-                                <rect key="frame" x="0.0" y="407" width="430" height="61"/>
+                                <rect key="frame" x="0.0" y="358" width="430" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -147,21 +142,92 @@
                             <constraint firstItem="SGb-yh-paN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xqb-Cl-Rb8"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Calculator" badgeValue="2" id="8c6-iX-I3w">
+                        <imageReference key="image" image="divide.square" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" systemColor="systemRedColor"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="label" destination="M9Y-qa-ln8" id="kgL-2L-Sqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="4"/>
+            <point key="canvasLocation" x="-575" y="123"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="f41-ST-r7H">
+            <objects>
+                <viewController id="yea-f7-HIj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f42-pc-USN">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eIv-q9-HKk"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="9t8-g2-QK1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzE-EV-pbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="213"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="nZv-9P-xT8">
+            <objects>
+                <viewController id="2xe-Dr-0vF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ByY-V3-hIu">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnC-Tp-LxS">
+                                <rect key="frame" x="10" y="69" width="410" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x63-tc-Unw"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="x63-tc-Unw" firstAttribute="trailing" secondItem="xnC-Tp-LxS" secondAttribute="trailing" constant="10" id="0kg-BN-QYw"/>
+                            <constraint firstItem="xnC-Tp-LxS" firstAttribute="top" secondItem="x63-tc-Unw" secondAttribute="top" constant="10" id="9H7-mY-Ljp"/>
+                            <constraint firstItem="xnC-Tp-LxS" firstAttribute="leading" secondItem="x63-tc-Unw" secondAttribute="leading" constant="10" id="QUX-z8-hu9"/>
+                            <constraint firstItem="x63-tc-Unw" firstAttribute="bottom" secondItem="xnC-Tp-LxS" secondAttribute="bottom" constant="10" id="h40-NH-YjB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="gXM-Dn-PKw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Naf-O2-Lme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="-393"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fNp-hj-PsT">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarVC" id="SaN-Zz-odZ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P71-ex-MJn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2xe-Dr-0vF" kind="relationship" relationship="viewControllers" id="Nzp-Nu-Wdb"/>
+                        <segue destination="yea-f7-HIj" kind="relationship" relationship="viewControllers" id="JiP-3e-zxr"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="KHf-d3-9ZX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFs-z0-TxV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-89"/>
         </scene>
     </scenes>
     <resources>
+        <image name="divide.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

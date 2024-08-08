@@ -42,6 +42,18 @@ class ViewController: UIViewController {
         print(safeAreaInsets)
     }
     
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        print(sender.titleLabel?.text)
+        print(#function)
+    }
+    
+    @IBAction func nextScreenTapped() {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ViewController2")
+            self.present(vc, animated: true)
+        
+        
+    }
     
     @objc func colorWellChanged(_ sender: UIColorWell) {
         self.view.backgroundColor = sender.selectedColor

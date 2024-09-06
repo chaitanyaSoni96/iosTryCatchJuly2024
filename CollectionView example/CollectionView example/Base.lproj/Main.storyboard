@@ -8,10 +8,67 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Carousel View Controller-->
+        <scene sceneID="yT1-l3-xqi">
+            <objects>
+                <viewController storyboardIdentifier="CarouselViewController" id="uON-ze-tes" customClass="CarouselViewController" customModule="CollectionView_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0E-A5-q1N">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0GQ-ru-flG">
+                                <rect key="frame" x="0.0" y="79" width="393" height="719"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qTz-0F-dbS">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="629.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="F9B-0I-Ibe">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xVo-6P-ywf">
+                                        <rect key="frame" x="0.0" y="639.33333333333337" width="393" height="25.666666666666629"/>
+                                        <color key="pageIndicatorTintColor" systemColor="systemGray6Color"/>
+                                        <color key="currentPageIndicatorTintColor" systemColor="systemGrayColor"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbr-9n-tus">
+                                        <rect key="frame" x="0.0" y="675" width="393" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="E4W-iD-QkH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Get Started!"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="blO-MM-HUw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0GQ-ru-flG" firstAttribute="top" secondItem="blO-MM-HUw" secondAttribute="top" constant="20" id="ggS-gV-Rsi"/>
+                            <constraint firstItem="0GQ-ru-flG" firstAttribute="leading" secondItem="blO-MM-HUw" secondAttribute="leading" id="pNW-et-BQw"/>
+                            <constraint firstItem="blO-MM-HUw" firstAttribute="bottom" secondItem="0GQ-ru-flG" secondAttribute="bottom" constant="20" id="pi5-YV-dUV"/>
+                            <constraint firstItem="blO-MM-HUw" firstAttribute="trailing" secondItem="0GQ-ru-flG" secondAttribute="trailing" id="xjY-yT-ARm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="rbr-9n-tus" id="4iM-YS-UWi"/>
+                        <outlet property="collectionView" destination="qTz-0F-dbS" id="4MT-43-Phy"/>
+                        <outlet property="pageControl" destination="xVo-6P-ywf" id="vfm-h1-HJu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yga-xs-lKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-931" y="12"/>
+        </scene>
+        <!--Collection View Example-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionView_example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Collection View Example" id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionView_example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,6 +106,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

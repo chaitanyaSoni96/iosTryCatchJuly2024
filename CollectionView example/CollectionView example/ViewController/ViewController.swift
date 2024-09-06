@@ -33,6 +33,11 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(#function)
+        let vc = UIViewController()
+        vc.loadViewIfNeeded()
+        vc.view.backgroundColor = .blue
+        vc.title = "cell"
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

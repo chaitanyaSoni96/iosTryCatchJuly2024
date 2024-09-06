@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         
         let nib = UINib(nibName: "CustomCollectionViewCell", bundle: .main)
         collectionView.register(nib, forCellWithReuseIdentifier: "custom")
+        
+        let headerFooterNib = UINib(nibName: "CollectionReusableView", bundle: .main)
+        collectionView.register(headerFooterNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerFooter")
+        collectionView.register(headerFooterNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "headerFooter")
     }
 
 
@@ -33,6 +37,10 @@ extension ViewController: UICollectionViewDelegate {
 }
 
 extension ViewController: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         10
     }
@@ -48,7 +56,17 @@ extension ViewController: UICollectionViewDataSource {
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerFooter", for: indexPath) as! CollectionReusableView
+        headerFooter.label.text = kind
+        return headerFooter
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return .init(width: collectionView.frame.width, height: 80)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return .init(width: collectionView.frame.width, height: 80)
+    }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {

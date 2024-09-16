@@ -7,31 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		289DB6912C940FA3009CD647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DB6902C940FA3009CD647 /* AppDelegate.swift */; };
-		289DB6932C940FA3009CD647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DB6922C940FA3009CD647 /* SceneDelegate.swift */; };
-		289DB69A2C940FA6009CD647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289DB6992C940FA6009CD647 /* Assets.xcassets */; };
-		289DB69D2C940FA6009CD647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289DB69B2C940FA6009CD647 /* LaunchScreen.storyboard */; };
-		289DB6A52C941102009CD647 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DB6A42C941102009CD647 /* Tabbar.swift */; };
-		289DB6A82C941110009CD647 /* Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DB6A72C941110009CD647 /* Page1.swift */; };
-		289DB6AA2C941117009CD647 /* Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DB6A92C941117009CD647 /* Page2.swift */; };
-		289DB6AC2C94111C009CD647 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DB6AB2C94111C009CD647 /* Page3.swift */; };
+		283FEF4D2BE74F6400E43E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF4C2BE74F6400E43E51 /* AppDelegate.swift */; };
+		283FEF4F2BE74F6400E43E51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF4E2BE74F6400E43E51 /* SceneDelegate.swift */; };
+		283FEF512BE74F6400E43E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF502BE74F6400E43E51 /* ViewController.swift */; };
+		283FEF542BE74F6400E43E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283FEF522BE74F6400E43E51 /* Main.storyboard */; };
+		283FEF562BE74F6600E43E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283FEF552BE74F6600E43E51 /* Assets.xcassets */; };
+		283FEF592BE74F6600E43E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283FEF572BE74F6600E43E51 /* LaunchScreen.storyboard */; };
+		283FEF642BE74F6600E43E51 /* Tabbar_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF632BE74F6600E43E51 /* Tabbar_ExampleTests.swift */; };
+		283FEF6E2BE74F6600E43E51 /* Tabbar_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF6D2BE74F6600E43E51 /* Tabbar_ExampleUITests.swift */; };
+		283FEF702BE74F6600E43E51 /* Tabbar_ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF6F2BE74F6600E43E51 /* Tabbar_ExampleUITestsLaunchTests.swift */; };
+		283FEF7D2BE75A1B00E43E51 /* TabVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF7C2BE75A1B00E43E51 /* TabVC1.swift */; };
+		283FEF7F2BE75A2300E43E51 /* TabVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF7E2BE75A2300E43E51 /* TabVC2.swift */; };
+		283FEF812BE75A2800E43E51 /* TabVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283FEF802BE75A2800E43E51 /* TabVC3.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		283FEF602BE74F6600E43E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 283FEF412BE74F6400E43E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 283FEF482BE74F6400E43E51;
+			remoteInfo = "Tabbar Example";
+		};
+		283FEF6A2BE74F6600E43E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 283FEF412BE74F6400E43E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 283FEF482BE74F6400E43E51;
+			remoteInfo = "Tabbar Example";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		289DB68D2C940FA3009CD647 /* Tabbar example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbar example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		289DB6902C940FA3009CD647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		289DB6922C940FA3009CD647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		289DB6992C940FA6009CD647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		289DB69C2C940FA6009CD647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		289DB69E2C940FA6009CD647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		289DB6A42C941102009CD647 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
-		289DB6A72C941110009CD647 /* Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1.swift; sourceTree = "<group>"; };
-		289DB6A92C941117009CD647 /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
-		289DB6AB2C94111C009CD647 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
+		283FEF492BE74F6400E43E51 /* Tabbar Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbar Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		283FEF4C2BE74F6400E43E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		283FEF4E2BE74F6400E43E51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		283FEF502BE74F6400E43E51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		283FEF532BE74F6400E43E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		283FEF552BE74F6600E43E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		283FEF582BE74F6600E43E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		283FEF5A2BE74F6600E43E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283FEF5F2BE74F6600E43E51 /* Tabbar ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabbar ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		283FEF632BE74F6600E43E51 /* Tabbar_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar_ExampleTests.swift; sourceTree = "<group>"; };
+		283FEF692BE74F6600E43E51 /* Tabbar ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabbar ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		283FEF6D2BE74F6600E43E51 /* Tabbar_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar_ExampleUITests.swift; sourceTree = "<group>"; };
+		283FEF6F2BE74F6600E43E51 /* Tabbar_ExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar_ExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		283FEF7C2BE75A1B00E43E51 /* TabVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC1.swift; sourceTree = "<group>"; };
+		283FEF7E2BE75A2300E43E51 /* TabVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC2.swift; sourceTree = "<group>"; };
+		283FEF802BE75A2800E43E51 /* TabVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		289DB68A2C940FA3009CD647 /* Frameworks */ = {
+		283FEF462BE74F6400E43E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283FEF5C2BE74F6600E43E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283FEF662BE74F6600E43E51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,82 +82,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		289DB6842C940FA3009CD647 = {
+		283FEF402BE74F6400E43E51 = {
 			isa = PBXGroup;
 			children = (
-				289DB68F2C940FA3009CD647 /* Tabbar example */,
-				289DB68E2C940FA3009CD647 /* Products */,
+				283FEF4B2BE74F6400E43E51 /* Tabbar Example */,
+				283FEF622BE74F6600E43E51 /* Tabbar ExampleTests */,
+				283FEF6C2BE74F6600E43E51 /* Tabbar ExampleUITests */,
+				283FEF4A2BE74F6400E43E51 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		289DB68E2C940FA3009CD647 /* Products */ = {
+		283FEF4A2BE74F6400E43E51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				289DB68D2C940FA3009CD647 /* Tabbar example.app */,
+				283FEF492BE74F6400E43E51 /* Tabbar Example.app */,
+				283FEF5F2BE74F6600E43E51 /* Tabbar ExampleTests.xctest */,
+				283FEF692BE74F6600E43E51 /* Tabbar ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		289DB68F2C940FA3009CD647 /* Tabbar example */ = {
+		283FEF4B2BE74F6400E43E51 /* Tabbar Example */ = {
 			isa = PBXGroup;
 			children = (
-				289DB6902C940FA3009CD647 /* AppDelegate.swift */,
-				289DB6922C940FA3009CD647 /* SceneDelegate.swift */,
-				289DB6A42C941102009CD647 /* Tabbar.swift */,
-				289DB6A62C941106009CD647 /* Tabbar Pages */,
-				289DB6992C940FA6009CD647 /* Assets.xcassets */,
-				289DB69B2C940FA6009CD647 /* LaunchScreen.storyboard */,
-				289DB69E2C940FA6009CD647 /* Info.plist */,
+				283FEF4C2BE74F6400E43E51 /* AppDelegate.swift */,
+				283FEF4E2BE74F6400E43E51 /* SceneDelegate.swift */,
+				283FEF502BE74F6400E43E51 /* ViewController.swift */,
+				283FEF7C2BE75A1B00E43E51 /* TabVC1.swift */,
+				283FEF7E2BE75A2300E43E51 /* TabVC2.swift */,
+				283FEF802BE75A2800E43E51 /* TabVC3.swift */,
+				283FEF522BE74F6400E43E51 /* Main.storyboard */,
+				283FEF552BE74F6600E43E51 /* Assets.xcassets */,
+				283FEF572BE74F6600E43E51 /* LaunchScreen.storyboard */,
+				283FEF5A2BE74F6600E43E51 /* Info.plist */,
 			);
-			path = "Tabbar example";
+			path = "Tabbar Example";
 			sourceTree = "<group>";
 		};
-		289DB6A62C941106009CD647 /* Tabbar Pages */ = {
+		283FEF622BE74F6600E43E51 /* Tabbar ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				289DB6A72C941110009CD647 /* Page1.swift */,
-				289DB6A92C941117009CD647 /* Page2.swift */,
-				289DB6AB2C94111C009CD647 /* Page3.swift */,
+				283FEF632BE74F6600E43E51 /* Tabbar_ExampleTests.swift */,
 			);
-			path = "Tabbar Pages";
+			path = "Tabbar ExampleTests";
+			sourceTree = "<group>";
+		};
+		283FEF6C2BE74F6600E43E51 /* Tabbar ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				283FEF6D2BE74F6600E43E51 /* Tabbar_ExampleUITests.swift */,
+				283FEF6F2BE74F6600E43E51 /* Tabbar_ExampleUITestsLaunchTests.swift */,
+			);
+			path = "Tabbar ExampleUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		289DB68C2C940FA3009CD647 /* Tabbar example */ = {
+		283FEF482BE74F6400E43E51 /* Tabbar Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 289DB6A12C940FA6009CD647 /* Build configuration list for PBXNativeTarget "Tabbar example" */;
+			buildConfigurationList = 283FEF732BE74F6600E43E51 /* Build configuration list for PBXNativeTarget "Tabbar Example" */;
 			buildPhases = (
-				289DB6892C940FA3009CD647 /* Sources */,
-				289DB68A2C940FA3009CD647 /* Frameworks */,
-				289DB68B2C940FA3009CD647 /* Resources */,
+				283FEF452BE74F6400E43E51 /* Sources */,
+				283FEF462BE74F6400E43E51 /* Frameworks */,
+				283FEF472BE74F6400E43E51 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Tabbar example";
-			productName = "Tabbar example";
-			productReference = 289DB68D2C940FA3009CD647 /* Tabbar example.app */;
+			name = "Tabbar Example";
+			productName = "Tabbar Example";
+			productReference = 283FEF492BE74F6400E43E51 /* Tabbar Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		283FEF5E2BE74F6600E43E51 /* Tabbar ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283FEF762BE74F6600E43E51 /* Build configuration list for PBXNativeTarget "Tabbar ExampleTests" */;
+			buildPhases = (
+				283FEF5B2BE74F6600E43E51 /* Sources */,
+				283FEF5C2BE74F6600E43E51 /* Frameworks */,
+				283FEF5D2BE74F6600E43E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				283FEF612BE74F6600E43E51 /* PBXTargetDependency */,
+			);
+			name = "Tabbar ExampleTests";
+			productName = "Tabbar ExampleTests";
+			productReference = 283FEF5F2BE74F6600E43E51 /* Tabbar ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		283FEF682BE74F6600E43E51 /* Tabbar ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283FEF792BE74F6600E43E51 /* Build configuration list for PBXNativeTarget "Tabbar ExampleUITests" */;
+			buildPhases = (
+				283FEF652BE74F6600E43E51 /* Sources */,
+				283FEF662BE74F6600E43E51 /* Frameworks */,
+				283FEF672BE74F6600E43E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				283FEF6B2BE74F6600E43E51 /* PBXTargetDependency */,
+			);
+			name = "Tabbar ExampleUITests";
+			productName = "Tabbar ExampleUITests";
+			productReference = 283FEF692BE74F6600E43E51 /* Tabbar ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		289DB6852C940FA3009CD647 /* Project object */ = {
+		283FEF412BE74F6400E43E51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					289DB68C2C940FA3009CD647 = {
+					283FEF482BE74F6400E43E51 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					283FEF5E2BE74F6600E43E51 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 283FEF482BE74F6400E43E51;
+					};
+					283FEF682BE74F6600E43E51 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 283FEF482BE74F6400E43E51;
 					};
 				};
 			};
-			buildConfigurationList = 289DB6882C940FA3009CD647 /* Build configuration list for PBXProject "Tabbar example" */;
+			buildConfigurationList = 283FEF442BE74F6400E43E51 /* Build configuration list for PBXProject "Tabbar Example" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,49 +223,104 @@
 				en,
 				Base,
 			);
-			mainGroup = 289DB6842C940FA3009CD647;
-			productRefGroup = 289DB68E2C940FA3009CD647 /* Products */;
+			mainGroup = 283FEF402BE74F6400E43E51;
+			productRefGroup = 283FEF4A2BE74F6400E43E51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				289DB68C2C940FA3009CD647 /* Tabbar example */,
+				283FEF482BE74F6400E43E51 /* Tabbar Example */,
+				283FEF5E2BE74F6600E43E51 /* Tabbar ExampleTests */,
+				283FEF682BE74F6600E43E51 /* Tabbar ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		289DB68B2C940FA3009CD647 /* Resources */ = {
+		283FEF472BE74F6400E43E51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289DB69D2C940FA6009CD647 /* LaunchScreen.storyboard in Resources */,
-				289DB69A2C940FA6009CD647 /* Assets.xcassets in Resources */,
+				283FEF592BE74F6600E43E51 /* LaunchScreen.storyboard in Resources */,
+				283FEF562BE74F6600E43E51 /* Assets.xcassets in Resources */,
+				283FEF542BE74F6400E43E51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283FEF5D2BE74F6600E43E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283FEF672BE74F6600E43E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		289DB6892C940FA3009CD647 /* Sources */ = {
+		283FEF452BE74F6400E43E51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289DB6A82C941110009CD647 /* Page1.swift in Sources */,
-				289DB6A52C941102009CD647 /* Tabbar.swift in Sources */,
-				289DB6AC2C94111C009CD647 /* Page3.swift in Sources */,
-				289DB6912C940FA3009CD647 /* AppDelegate.swift in Sources */,
-				289DB6932C940FA3009CD647 /* SceneDelegate.swift in Sources */,
-				289DB6AA2C941117009CD647 /* Page2.swift in Sources */,
+				283FEF7D2BE75A1B00E43E51 /* TabVC1.swift in Sources */,
+				283FEF7F2BE75A2300E43E51 /* TabVC2.swift in Sources */,
+				283FEF812BE75A2800E43E51 /* TabVC3.swift in Sources */,
+				283FEF512BE74F6400E43E51 /* ViewController.swift in Sources */,
+				283FEF4D2BE74F6400E43E51 /* AppDelegate.swift in Sources */,
+				283FEF4F2BE74F6400E43E51 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283FEF5B2BE74F6600E43E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283FEF642BE74F6600E43E51 /* Tabbar_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283FEF652BE74F6600E43E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283FEF6E2BE74F6600E43E51 /* Tabbar_ExampleUITests.swift in Sources */,
+				283FEF702BE74F6600E43E51 /* Tabbar_ExampleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		283FEF612BE74F6600E43E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 283FEF482BE74F6400E43E51 /* Tabbar Example */;
+			targetProxy = 283FEF602BE74F6600E43E51 /* PBXContainerItemProxy */;
+		};
+		283FEF6B2BE74F6600E43E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 283FEF482BE74F6400E43E51 /* Tabbar Example */;
+			targetProxy = 283FEF6A2BE74F6600E43E51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		289DB69B2C940FA6009CD647 /* LaunchScreen.storyboard */ = {
+		283FEF522BE74F6400E43E51 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				289DB69C2C940FA6009CD647 /* Base */,
+				283FEF532BE74F6400E43E51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		283FEF572BE74F6600E43E51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				283FEF582BE74F6600E43E51 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +328,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		289DB69F2C940FA6009CD647 /* Debug */ = {
+		283FEF712BE74F6600E43E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +391,7 @@
 			};
 			name = Debug;
 		};
-		289DB6A02C940FA6009CD647 /* Release */ = {
+		283FEF722BE74F6600E43E51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,19 +447,18 @@
 			};
 			name = Release;
 		};
-		289DB6A22C940FA6009CD647 /* Debug */ = {
+		283FEF742BE74F6600E43E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = EKLMW4PJ2F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tabbar example/Info.plist";
+				INFOPLIST_FILE = "Tabbar Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -321,19 +474,18 @@
 			};
 			name = Debug;
 		};
-		289DB6A32C940FA6009CD647 /* Release */ = {
+		283FEF752BE74F6600E43E51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = EKLMW4PJ2F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tabbar example/Info.plist";
+				INFOPLIST_FILE = "Tabbar Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,28 +501,118 @@
 			};
 			name = Release;
 		};
+		283FEF772BE74F6600E43E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabbar Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabbar Example";
+			};
+			name = Debug;
+		};
+		283FEF782BE74F6600E43E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabbar Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabbar Example";
+			};
+			name = Release;
+		};
+		283FEF7A2BE74F6600E43E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tabbar Example";
+			};
+			name = Debug;
+		};
+		283FEF7B2BE74F6600E43E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Tabbar-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tabbar Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		289DB6882C940FA3009CD647 /* Build configuration list for PBXProject "Tabbar example" */ = {
+		283FEF442BE74F6400E43E51 /* Build configuration list for PBXProject "Tabbar Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				289DB69F2C940FA6009CD647 /* Debug */,
-				289DB6A02C940FA6009CD647 /* Release */,
+				283FEF712BE74F6600E43E51 /* Debug */,
+				283FEF722BE74F6600E43E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		289DB6A12C940FA6009CD647 /* Build configuration list for PBXNativeTarget "Tabbar example" */ = {
+		283FEF732BE74F6600E43E51 /* Build configuration list for PBXNativeTarget "Tabbar Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				289DB6A22C940FA6009CD647 /* Debug */,
-				289DB6A32C940FA6009CD647 /* Release */,
+				283FEF742BE74F6600E43E51 /* Debug */,
+				283FEF752BE74F6600E43E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283FEF762BE74F6600E43E51 /* Build configuration list for PBXNativeTarget "Tabbar ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283FEF772BE74F6600E43E51 /* Debug */,
+				283FEF782BE74F6600E43E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283FEF792BE74F6600E43E51 /* Build configuration list for PBXNativeTarget "Tabbar ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283FEF7A2BE74F6600E43E51 /* Debug */,
+				283FEF7B2BE74F6600E43E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 289DB6852C940FA3009CD647 /* Project object */;
+	rootObject = 283FEF412BE74F6400E43E51 /* Project object */;
 }

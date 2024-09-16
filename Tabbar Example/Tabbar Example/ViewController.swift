@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-blah blah
+
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tabbar: UITabBar!
     

@@ -42,7 +42,13 @@ class ViewController: UIViewController {
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationItem.setRightBarButtonItems([UIBarButtonItem(systemItem: UIBarButtonItem.SystemItem.add)], animated: true)
+    }
+    
     func tabbarItemSelected(item: UITabBarItem) {
         
         if item.tag == 1 {

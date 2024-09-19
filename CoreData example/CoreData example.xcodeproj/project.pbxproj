@@ -16,6 +16,8 @@
 		281B48D72C9810E40034A1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281B48D52C9810E40034A1E0 /* LaunchScreen.storyboard */; };
 		281B48E02C98115B0034A1E0 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B48DE2C98115B0034A1E0 /* User+CoreDataClass.swift */; };
 		281B48E12C98115B0034A1E0 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B48DF2C98115B0034A1E0 /* User+CoreDataProperties.swift */; };
+		281B49052C9BF4DF0034A1E0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B49042C9BF4DF0034A1E0 /* CoreDataManager.swift */; };
+		281B49072C9BFA870034A1E0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B49062C9BFA870034A1E0 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		281B48D82C9810E40034A1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		281B48DE2C98115B0034A1E0 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		281B48DF2C98115B0034A1E0 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		281B49042C9BF4DF0034A1E0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		281B49062C9BFA870034A1E0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				281B48C72C9810E20034A1E0 /* AppDelegate.swift */,
+				281B49042C9BF4DF0034A1E0 /* CoreDataManager.swift */,
 				281B48C92C9810E20034A1E0 /* SceneDelegate.swift */,
 				281B48CB2C9810E20034A1E0 /* ViewController.swift */,
+				281B49062C9BFA870034A1E0 /* TableViewController.swift */,
 				281B48CD2C9810E20034A1E0 /* Main.storyboard */,
 				281B48D32C9810E40034A1E0 /* Assets.xcassets */,
 				281B48D52C9810E40034A1E0 /* LaunchScreen.storyboard */,
@@ -150,8 +156,10 @@
 				281B48CC2C9810E20034A1E0 /* ViewController.swift in Sources */,
 				281B48C82C9810E20034A1E0 /* AppDelegate.swift in Sources */,
 				281B48E12C98115B0034A1E0 /* User+CoreDataProperties.swift in Sources */,
+				281B49072C9BFA870034A1E0 /* TableViewController.swift in Sources */,
 				281B48CA2C9810E20034A1E0 /* SceneDelegate.swift in Sources */,
 				281B48D22C9810E20034A1E0 /* CoreData_example.xcdatamodeld in Sources */,
+				281B49052C9BF4DF0034A1E0 /* CoreDataManager.swift in Sources */,
 				281B48E02C98115B0034A1E0 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 
 import UIKit
 import Photos
+import PhotosUI
 
 class ViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         let vc = storyboard.instantiateViewController(identifier: "ImageSliderViewController") as! ImageSliderViewController
         return vc
     }()
+    private var currentImageViewTileTag: Int? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,22 +60,56 @@ class ViewController: UIViewController {
         imageViewController.view.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(imageViewController.view)
         
-        imageViewController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        imageViewController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        imageViewController.view.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        imageViewController.view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        imageViewController.view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        imageViewController.view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
         
         self.addChild(imageSliderViewController)
         imageSliderViewController.view.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(imageSliderViewController.view)
         
-        imageSliderViewController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        imageSliderViewController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        imageSliderViewController.view.topAnchor.constraint(equalTo: imageViewController.view.topAnchor).isActive = true
-        imageSliderViewController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        imageSliderViewController.view.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        imageSliderViewController.view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        imageSliderViewController.view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        imageViewController.view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: imageSliderViewController.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        imageSliderViewController.view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        imageSliderViewController.view.safeAreaLayoutGuide.heightAnchor.constraint(equalToConstant: 70).isActive = true
 //        imageViewController.view.bottomAnchor
         
-        
+        imageSliderViewController.button1.addTarget(self,
+                                                    action: #selector(self.addButtonTapped(_:)),
+                                                    for: .touchUpInside)
+        imageSliderViewController.button2.addTarget(self,
+                                                    action: #selector(self.addButtonTapped(_:)),
+                                                    for: .touchUpInside)
+        imageSliderViewController.button3.addTarget(self,
+                                                    action: #selector(self.addButtonTapped(_:)),
+                                                    for: .touchUpInside)
+        imageSliderViewController.button4.addTarget(self,
+                                                    action: #selector(self.addButtonTapped(_:)),
+                                                    for: .touchUpInside)
+        imageSliderViewController.button5.addTarget(self,
+                                                    action: #selector(self.addButtonTapped(_:)),
+                                                    for: .touchUpInside)
+        imageSliderViewController.button6.addTarget(self,
+                                                    action: #selector(self.addButtonTapped(_:)),
+                                                    for: .touchUpInside)
+    }
+    
+    @objc func addButtonTapped(_ sender: UIButton) {
+        if photoLibraryAuthorisation {
+            
+            var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
+            config.selectionLimit = 1
+            config.filter = .images
+            
+            
+            let photoPicker = PHPickerViewController(configuration: config)
+            photoPicker.delegate = self
+            
+            currentImageViewTileTag = sender.superview?.tag
+            
+            self.present(photoPicker, animated: true)
+        }
     }
 
     func showError(_ message: String) {
@@ -86,3 +122,23 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: PHPickerViewControllerDelegate {
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true)
+        
+        let identifiers = results.compactMap(\.assetIdentifier)
+        let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: identifiers, options: nil)
+        fetchResult.enumerateObjects { (asset, index, stop) -> Void in
+            PHImageManager.default().requestImage(for: asset,
+                                                  targetSize: self.imageViewController.imageView.frame.size,
+                                                  contentMode: PHImageContentMode.aspectFit,
+                                                  options: nil) { (image: UIImage?, _: [AnyHashable : Any]?) in
+                self.imageViewController.imageView.image = image
+                if let currentImageViewTileTag = self.currentImageViewTileTag {
+                    let imageView = self.imageSliderViewController.view.viewWithTag(currentImageViewTileTag)?.subviews.first(where: { $0.isKind(of: UIImageView.self) }) as? UIImageView
+                    imageView?.image = image
+                }
+            }
+        }
+    }
+}

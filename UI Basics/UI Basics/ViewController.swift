@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
     
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -34,6 +35,25 @@ class ViewController: UIViewController {
         
         button.setTitle("Some", for: UIControl.State.normal)
         
+//        Cook the Spaghetti: 
+//        Boil a pot of salted water and cook the spaghetti according to package instructions until al dente. Drain and set aside.
+//        Prepare the Sauce: 
+//        In a large pan, heat olive oil over medium heat. Add the minced garlic and sauté for about 1-2 minutes until fragrant.
+        var mutableAttributedString = NSMutableAttributedString()
+        let titleAttributes = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17),
+                              NSAttributedString.Key.foregroundColor: UIColor.red]
+        let bodyAttributes = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17),
+                              NSAttributedString.Key.foregroundColor: UIColor.black]
+        
+        mutableAttributedString.append(NSAttributedString(string: "• Cook the Spaghetti: ",
+                                                          attributes: titleAttributes))
+        mutableAttributedString.append(NSAttributedString(string: "Boil a pot of salted water and cook the spaghetti according to package instructions until al dente. Drain and set aside.\n", attributes: bodyAttributes))
+        
+        mutableAttributedString.append(NSAttributedString(string: "• Prepare the Sauce: ",
+                                                          attributes: titleAttributes))
+        mutableAttributedString.append(NSAttributedString(string: "In a large pan, heat olive oil over medium heat. Add the minced garlic and sauté for about 1-2 minutes until fragrant.\n", attributes: bodyAttributes))
+        label.attributedText = mutableAttributedString
+        label.numberOfLines = 0
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

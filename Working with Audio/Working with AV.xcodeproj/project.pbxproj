@@ -15,6 +15,7 @@
 		28BD67C02CC6317600E924DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67BE2CC6317600E924DB /* LaunchScreen.storyboard */; };
 		28BD67C92CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67C82CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 */; };
 		28BD67CA2CC6323F00E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67C72CC6323300E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 */; };
+		28BD67CC2CC6367600E924DB /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BD67CB2CC6367600E924DB /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		28BD67C12CC6317600E924DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28BD67C72CC6323300E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Legend of Zelda - Main Theme on Marimba.mp4"; sourceTree = "<group>"; };
 		28BD67C82CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Legend of Zelda - Main Theme on Marimba.mp3"; sourceTree = "<group>"; };
+		28BD67CB2CC6367600E924DB /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				28BD67B32CC6317400E924DB /* AppDelegate.swift */,
 				28BD67B52CC6317400E924DB /* SceneDelegate.swift */,
 				28BD67B72CC6317400E924DB /* ViewController.swift */,
+				28BD67CB2CC6367600E924DB /* PlayerView.swift */,
 				28BD67B92CC6317400E924DB /* Main.storyboard */,
 				28BD67BC2CC6317600E924DB /* Assets.xcassets */,
 				28BD67BE2CC6317600E924DB /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				28BD67B82CC6317400E924DB /* ViewController.swift in Sources */,
 				28BD67B42CC6317400E924DB /* AppDelegate.swift in Sources */,
 				28BD67B62CC6317400E924DB /* SceneDelegate.swift in Sources */,
+				28BD67CC2CC6367600E924DB /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

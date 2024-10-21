@@ -13,6 +13,8 @@
 		28BD67BB2CC6317400E924DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67B92CC6317400E924DB /* Main.storyboard */; };
 		28BD67BD2CC6317600E924DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67BC2CC6317600E924DB /* Assets.xcassets */; };
 		28BD67C02CC6317600E924DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67BE2CC6317600E924DB /* LaunchScreen.storyboard */; };
+		28BD67C92CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67C82CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 */; };
+		28BD67CA2CC6323F00E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28BD67C72CC6323300E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		28BD67BC2CC6317600E924DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28BD67BF2CC6317600E924DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28BD67C12CC6317600E924DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BD67C72CC6323300E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Legend of Zelda - Main Theme on Marimba.mp4"; sourceTree = "<group>"; };
+		28BD67C82CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Legend of Zelda - Main Theme on Marimba.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		28BD67B22CC6317400E924DB /* Working with AV */ = {
 			isa = PBXGroup;
 			children = (
+				28BD67C82CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 */,
+				28BD67C72CC6323300E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 */,
 				28BD67B32CC6317400E924DB /* AppDelegate.swift */,
 				28BD67B52CC6317400E924DB /* SceneDelegate.swift */,
 				28BD67B72CC6317400E924DB /* ViewController.swift */,
@@ -125,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28BD67C92CC6323A00E924DB /* Legend of Zelda - Main Theme on Marimba.mp3 in Resources */,
+				28BD67CA2CC6323F00E924DB /* Legend of Zelda - Main Theme on Marimba.mp4 in Resources */,
 				28BD67C02CC6317600E924DB /* LaunchScreen.storyboard in Resources */,
 				28BD67BD2CC6317600E924DB /* Assets.xcassets in Resources */,
 				28BD67BB2CC6317400E924DB /* Main.storyboard in Resources */,
@@ -294,7 +302,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EKLMW4PJ2F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Working with Audio/Info.plist";
+				INFOPLIST_FILE = "Working with AV/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EKLMW4PJ2F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Working with Audio/Info.plist";
+				INFOPLIST_FILE = "Working with AV/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

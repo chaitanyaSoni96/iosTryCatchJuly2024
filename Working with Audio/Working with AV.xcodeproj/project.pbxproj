@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28BD67B02CC6317400E924DB /* Working with Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Working with Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BD67B02CC6317400E924DB /* Working with AV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Working with AV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BD67B32CC6317400E924DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BD67B52CC6317400E924DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28BD67B72CC6317400E924DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		28BD67A72CC6317400E924DB = {
 			isa = PBXGroup;
 			children = (
-				28BD67B22CC6317400E924DB /* Working with Audio */,
+				28BD67B22CC6317400E924DB /* Working with AV */,
 				28BD67B12CC6317400E924DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		28BD67B12CC6317400E924DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28BD67B02CC6317400E924DB /* Working with Audio.app */,
+				28BD67B02CC6317400E924DB /* Working with AV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28BD67B22CC6317400E924DB /* Working with Audio */ = {
+		28BD67B22CC6317400E924DB /* Working with AV */ = {
 			isa = PBXGroup;
 			children = (
 				28BD67B32CC6317400E924DB /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				28BD67BE2CC6317600E924DB /* LaunchScreen.storyboard */,
 				28BD67C12CC6317600E924DB /* Info.plist */,
 			);
-			path = "Working with Audio";
+			path = "Working with AV";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28BD67AF2CC6317400E924DB /* Working with Audio */ = {
+		28BD67AF2CC6317400E924DB /* Working with AV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28BD67C42CC6317600E924DB /* Build configuration list for PBXNativeTarget "Working with Audio" */;
+			buildConfigurationList = 28BD67C42CC6317600E924DB /* Build configuration list for PBXNativeTarget "Working with AV" */;
 			buildPhases = (
 				28BD67AC2CC6317400E924DB /* Sources */,
 				28BD67AD2CC6317400E924DB /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "Working with Audio";
+			name = "Working with AV";
 			productName = "Working with Audio";
-			productReference = 28BD67B02CC6317400E924DB /* Working with Audio.app */;
+			productReference = 28BD67B02CC6317400E924DB /* Working with AV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28BD67AB2CC6317400E924DB /* Build configuration list for PBXProject "Working with Audio" */;
+			buildConfigurationList = 28BD67AB2CC6317400E924DB /* Build configuration list for PBXProject "Working with AV" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28BD67AF2CC6317400E924DB /* Working with Audio */,
+				28BD67AF2CC6317400E924DB /* Working with AV */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28BD67AB2CC6317400E924DB /* Build configuration list for PBXProject "Working with Audio" */ = {
+		28BD67AB2CC6317400E924DB /* Build configuration list for PBXProject "Working with AV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28BD67C22CC6317600E924DB /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28BD67C42CC6317600E924DB /* Build configuration list for PBXNativeTarget "Working with Audio" */ = {
+		28BD67C42CC6317600E924DB /* Build configuration list for PBXNativeTarget "Working with AV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28BD67C52CC6317600E924DB /* Debug */,

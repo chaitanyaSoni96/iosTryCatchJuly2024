@@ -175,3 +175,88 @@ func xyz() -> Void {
 func abc() {
     
 }
+
+
+
+protocol Deletable {
+    func delete()
+}
+
+protocol Polishable {
+    func polish() -> GemStone?
+}
+
+class Object: Deletable {
+    func delete() {
+        
+    }
+    
+    var width: Float
+    var height: Float
+    
+    init(width: Float, height: Float) {
+        self.width = width
+        self.height = height
+    }
+}
+
+class Stone: Object, Polishable {
+    func polish() -> GemStone? {
+        if Int.random(in: 1...10) % 2 == 0 {
+            return GemStone(cutStyle: "", rarity: .common, color: self.color, width: self.width, height: self.height)
+        } else {
+            return nil
+        }
+    }
+    
+    var color: String
+    
+    init(color: String, width: Float, height: Float) {
+        self.color = color
+        super.init(width: width, height: height)
+    }
+}
+
+class GemStone: Stone {
+    
+    enum Rarity {
+        case common
+        case precious
+    }
+    
+    var cutStyle: String
+    var rarity: GemStone.Rarity
+    
+    override func polish() -> GemStone? {
+        GemStone(cutStyle: self.cutStyle, rarity: .precious, color: self.color, width: self.width, height: self.height)
+    }
+    
+    init(cutStyle: String, rarity: GemStone.Rarity, color: String, width: Float, height: Float) {
+        self.cutStyle = cutStyle
+        self.rarity = rarity
+        super.init(color: color, width: width, height: height)
+    }
+    
+}
+let gemstone = GemStone(cutStyle: "", rarity: .common, color: "", width: 1, height: 1)
+let stone = Stone(color: "", width: 2, height: 2)
+
+let someObject: Object = GemStone(cutStyle: "", rarity: .common, color: "", width: 10, height: 10)
+
+func trashCan(object: Object) {
+    
+}
+
+func locker(gemstone: GemStone) {
+    
+}
+gemstone.delete()
+trashCan(object: gemstone)
+
+
+if let gem = stone.polish() {
+    gem.polish()
+    locker(gemstone: gem)
+}
+
+locker(gemstone: stone as! GemStone)

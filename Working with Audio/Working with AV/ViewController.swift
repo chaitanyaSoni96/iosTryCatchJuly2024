@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerView: PlayerView!
     @IBOutlet weak var containerView: UIView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad() -> Void {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -78,3 +78,33 @@ class ViewController: UIViewController {
     }
 }
 
+
+
+class DoCatch {
+    
+    init() {
+        do {
+            let bool = try someThrowingFunction(i: "abc")
+        } catch let err as DoCatchError {
+            print(err)
+        } catch let err {
+            print(err)
+        }
+        
+        if let bool = try? someThrowingFunction(i: "1") {
+            
+        }
+    }
+    
+    func someThrowingFunction(i: String) throws -> Bool {
+        if let number = Int(i) {
+            return true
+        }
+        throw DoCatchError.unknown
+    }
+    
+}
+
+enum DoCatchError: Error {
+    case unknown
+}

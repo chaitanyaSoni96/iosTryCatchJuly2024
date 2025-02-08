@@ -9,6 +9,12 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var users: [User]? = nil {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,29 +23,37 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        
+        let users = try? CoreDataManager.shared.persistentContainer.viewContext.fetch(User.fetchRequest())
+        self.users = users
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return users?.count ?? 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        
+        
+        let user = self.users?[indexPath.row]
+        cell.textLabel?.text = user?.username
+        cell.detailTextLabel?.text = user?.password
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

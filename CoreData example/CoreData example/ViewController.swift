@@ -53,6 +53,7 @@ class ViewController: UIViewController {
         guard !(usernameTF.text ?? "").isEmpty,
               PasswordValidator().validate(passwordTF.text)
         else {
+            print(passwordTF.text)
             self.showError("Validation Error")
             return
         }
@@ -60,7 +61,14 @@ class ViewController: UIViewController {
         user.id = .init()
         user.username = usernameTF.text
         user.password = passwordTF.text
-        
+        let favourites: [Favourite] = (1...10).map({
+            let favourite = Favourite(context: CoreDataManager.shared.persistentContainer.viewContext)
+            favourite.id = .init()
+            favourite.movieID = .init()
+            favourite.name = "Favourite \($0)"
+            return favourite
+        })
+        user.favourites = NSOrderedSet(array: favourites)
         CoreDataManager.shared.saveContext()
         
         self.showHomeScreen()

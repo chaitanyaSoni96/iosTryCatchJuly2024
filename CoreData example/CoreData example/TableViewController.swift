@@ -34,22 +34,27 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return users?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return users?.count ?? 0
+        return users?[section].favourites?.count ?? 0
     }
-
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let user = self.users?[section]
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        cell.textLabel?.text = user?.username
+        return cell
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         
         
-        let user = self.users?[indexPath.row]
-        cell.textLabel?.text = user?.username
-        cell.detailTextLabel?.text = user?.password
+        let fav = self.users?[indexPath.section].favourites?.object(at: indexPath.row) as? Favourite
+        cell.textLabel?.text = fav?.name
         
         return cell
     }

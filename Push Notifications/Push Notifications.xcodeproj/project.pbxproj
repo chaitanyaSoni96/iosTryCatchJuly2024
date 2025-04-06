@@ -6,151 +6,119 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		16B420FDD61EFD522F3DAC34 /* Pods_ThirdPartyLibrary_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9FA5B4705615502FCF1BBC /* Pods_ThirdPartyLibrary_example.framework */; };
-		287BB1F62D8AB19D00E7E5F8 /* SwiftyMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 287BB1F52D8AB19D00E7E5F8 /* SwiftyMenu */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		18DBC4237F7CE0551803B4A6 /* Pods-ThirdPartyLibrary example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPartyLibrary example.debug.xcconfig"; path = "Target Support Files/Pods-ThirdPartyLibrary example/Pods-ThirdPartyLibrary example.debug.xcconfig"; sourceTree = "<group>"; };
-		287BB1992D8AAC8500E7E5F8 /* ThirdPartyLibrary example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThirdPartyLibrary example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C9FA5B4705615502FCF1BBC /* Pods_ThirdPartyLibrary_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThirdPartyLibrary_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CCFE5FFF06510FCD93E7F54 /* Pods-ThirdPartyLibrary example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPartyLibrary example.release.xcconfig"; path = "Target Support Files/Pods-ThirdPartyLibrary example/Pods-ThirdPartyLibrary example.release.xcconfig"; sourceTree = "<group>"; };
+		28004C7A2DA2340C009D036F /* Push Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		287BB1AB2D8AAC8800E7E5F8 /* Exceptions for "ThirdPartyLibrary example" folder in "ThirdPartyLibrary example" target */ = {
+		28004C8F2DA2340E009D036F /* Exceptions for "Push Notifications" folder in "Push Notifications" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 287BB1982D8AAC8500E7E5F8 /* ThirdPartyLibrary example */;
+			target = 28004C792DA2340C009D036F /* Push Notifications */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		287BB19B2D8AAC8500E7E5F8 /* ThirdPartyLibrary example */ = {
+		28004C7C2DA2340C009D036F /* Push Notifications */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				287BB1AB2D8AAC8800E7E5F8 /* Exceptions for "ThirdPartyLibrary example" folder in "ThirdPartyLibrary example" target */,
+				28004C8F2DA2340E009D036F /* Exceptions for "Push Notifications" folder in "Push Notifications" target */,
 			);
-			path = "ThirdPartyLibrary example";
+			path = "Push Notifications";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		287BB1962D8AAC8500E7E5F8 /* Frameworks */ = {
+		28004C772DA2340C009D036F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B420FDD61EFD522F3DAC34 /* Pods_ThirdPartyLibrary_example.framework in Frameworks */,
-				287BB1F62D8AB19D00E7E5F8 /* SwiftyMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26D40994664F6DFD55B2BDFD /* Pods */ = {
+		28004C712DA2340C009D036F = {
 			isa = PBXGroup;
 			children = (
-				18DBC4237F7CE0551803B4A6 /* Pods-ThirdPartyLibrary example.debug.xcconfig */,
-				7CCFE5FFF06510FCD93E7F54 /* Pods-ThirdPartyLibrary example.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		287BB1902D8AAC8500E7E5F8 = {
-			isa = PBXGroup;
-			children = (
-				287BB19B2D8AAC8500E7E5F8 /* ThirdPartyLibrary example */,
-				287BB19A2D8AAC8500E7E5F8 /* Products */,
-				26D40994664F6DFD55B2BDFD /* Pods */,
-				487D020B4C4BD5875BED7110 /* Frameworks */,
+				28004C7C2DA2340C009D036F /* Push Notifications */,
+				28004C7B2DA2340C009D036F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		287BB19A2D8AAC8500E7E5F8 /* Products */ = {
+		28004C7B2DA2340C009D036F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				287BB1992D8AAC8500E7E5F8 /* ThirdPartyLibrary example.app */,
+				28004C7A2DA2340C009D036F /* Push Notifications.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		487D020B4C4BD5875BED7110 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7C9FA5B4705615502FCF1BBC /* Pods_ThirdPartyLibrary_example.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		287BB1982D8AAC8500E7E5F8 /* ThirdPartyLibrary example */ = {
+		28004C792DA2340C009D036F /* Push Notifications */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 287BB1AC2D8AAC8800E7E5F8 /* Build configuration list for PBXNativeTarget "ThirdPartyLibrary example" */;
+			buildConfigurationList = 28004C902DA2340E009D036F /* Build configuration list for PBXNativeTarget "Push Notifications" */;
 			buildPhases = (
-				703C5DA727C7FB52EAFB69B7 /* [CP] Check Pods Manifest.lock */,
-				287BB1952D8AAC8500E7E5F8 /* Sources */,
-				287BB1962D8AAC8500E7E5F8 /* Frameworks */,
-				287BB1972D8AAC8500E7E5F8 /* Resources */,
-				19042CE6C496F5802C2EDE1E /* [CP] Embed Pods Frameworks */,
+				28004C762DA2340C009D036F /* Sources */,
+				28004C772DA2340C009D036F /* Frameworks */,
+				28004C782DA2340C009D036F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				287BB19B2D8AAC8500E7E5F8 /* ThirdPartyLibrary example */,
+				28004C7C2DA2340C009D036F /* Push Notifications */,
 			);
-			name = "ThirdPartyLibrary example";
-			productName = "ThirdPartyLibrary example";
-			productReference = 287BB1992D8AAC8500E7E5F8 /* ThirdPartyLibrary example.app */;
+			name = "Push Notifications";
+			packageProductDependencies = (
+			);
+			productName = "Push Notifications";
+			productReference = 28004C7A2DA2340C009D036F /* Push Notifications.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		287BB1912D8AAC8500E7E5F8 /* Project object */ = {
+		28004C722DA2340C009D036F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					287BB1982D8AAC8500E7E5F8 = {
+					28004C792DA2340C009D036F = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = 287BB1942D8AAC8500E7E5F8 /* Build configuration list for PBXProject "ThirdPartyLibrary example" */;
+			buildConfigurationList = 28004C752DA2340C009D036F /* Build configuration list for PBXProject "Push Notifications" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 287BB1902D8AAC8500E7E5F8;
+			mainGroup = 28004C712DA2340C009D036F;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				287BB1F42D8AB18C00E7E5F8 /* XCRemoteSwiftPackageReference "SwiftyMenu" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 287BB19A2D8AAC8500E7E5F8 /* Products */;
+			productRefGroup = 28004C7B2DA2340C009D036F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				287BB1982D8AAC8500E7E5F8 /* ThirdPartyLibrary example */,
+				28004C792DA2340C009D036F /* Push Notifications */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		287BB1972D8AAC8500E7E5F8 /* Resources */ = {
+		28004C782DA2340C009D036F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,50 +127,8 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		19042CE6C496F5802C2EDE1E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThirdPartyLibrary example/Pods-ThirdPartyLibrary example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThirdPartyLibrary example/Pods-ThirdPartyLibrary example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThirdPartyLibrary example/Pods-ThirdPartyLibrary example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		703C5DA727C7FB52EAFB69B7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ThirdPartyLibrary example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		287BB1952D8AAC8500E7E5F8 /* Sources */ = {
+		28004C762DA2340C009D036F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,18 +138,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		287BB1AD2D8AAC8800E7E5F8 /* Debug */ = {
+		28004C912DA2340E009D036F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18DBC4237F7CE0551803B4A6 /* Pods-ThirdPartyLibrary example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Push Notifications/Push Notifications.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EKLMW4PJ2F;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ThirdPartyLibrary example/Info.plist";
+				INFOPLIST_FILE = "Push Notifications/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -234,7 +159,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.ThirdPartyLibrary-example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Push-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -242,18 +167,17 @@
 			};
 			name = Debug;
 		};
-		287BB1AE2D8AAC8800E7E5F8 /* Release */ = {
+		28004C922DA2340E009D036F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CCFE5FFF06510FCD93E7F54 /* Pods-ThirdPartyLibrary example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Push Notifications/Push Notifications.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EKLMW4PJ2F;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ThirdPartyLibrary example/Info.plist";
+				INFOPLIST_FILE = "Push Notifications/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -264,7 +188,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.ThirdPartyLibrary-example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaitanyasoni.Push-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -272,7 +196,7 @@
 			};
 			name = Release;
 		};
-		287BB1AF2D8AAC8800E7E5F8 /* Debug */ = {
+		28004C932DA2340E009D036F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -335,7 +259,7 @@
 			};
 			name = Debug;
 		};
-		287BB1B02D8AAC8800E7E5F8 /* Release */ = {
+		28004C942DA2340E009D036F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -394,44 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		287BB1942D8AAC8500E7E5F8 /* Build configuration list for PBXProject "ThirdPartyLibrary example" */ = {
+		28004C752DA2340C009D036F /* Build configuration list for PBXProject "Push Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				287BB1AF2D8AAC8800E7E5F8 /* Debug */,
-				287BB1B02D8AAC8800E7E5F8 /* Release */,
+				28004C932DA2340E009D036F /* Debug */,
+				28004C942DA2340E009D036F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		287BB1AC2D8AAC8800E7E5F8 /* Build configuration list for PBXNativeTarget "ThirdPartyLibrary example" */ = {
+		28004C902DA2340E009D036F /* Build configuration list for PBXNativeTarget "Push Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				287BB1AD2D8AAC8800E7E5F8 /* Debug */,
-				287BB1AE2D8AAC8800E7E5F8 /* Release */,
+				28004C912DA2340E009D036F /* Debug */,
+				28004C922DA2340E009D036F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		287BB1F42D8AB18C00E7E5F8 /* XCRemoteSwiftPackageReference "SwiftyMenu" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/KarimEbrahemAbdelaziz/SwiftyMenu";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		287BB1F52D8AB19D00E7E5F8 /* SwiftyMenu */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 287BB1F42D8AB18C00E7E5F8 /* XCRemoteSwiftPackageReference "SwiftyMenu" */;
-			productName = SwiftyMenu;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 287BB1912D8AAC8500E7E5F8 /* Project object */;
+	rootObject = 28004C722DA2340C009D036F /* Project object */;
 }
